@@ -49,7 +49,7 @@ export default {
     };
   },
   async fetch() {
-    this.feed = await fetch("http://localhost:3001/getFeed").then(res =>
+    this.feed = await fetch("https://vast-thicket-64154.herokuapp.com/getFeed").then(res =>
       res.json()
     );
   }
